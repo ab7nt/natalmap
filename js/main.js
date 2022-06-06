@@ -99,8 +99,8 @@
         {name:'Козерог', month:13,day:20}
         ];
 
-      const day = birthDayInput.value;
-      const month = birthMonthInput.value;
+      const day = Number(birthDayInput.value);
+      const month = Number(birthMonthInput.value);
 
       if(goroscopeSign[month-1].day <= day) {
         sign = goroscopeSign[month].name;
