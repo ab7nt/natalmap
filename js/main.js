@@ -63,20 +63,21 @@
     // }
 
     function showPictogramm(value) {
-      const lastItemOfValue = value.split('').pop();
-
+      const randomizedForPlanets = Math.round(Math.random() * planets.length);
+      const randomizedForSigns = Math.round(Math.random() * signs.length);
+      
       if(value.length%2 === 1) {
         planets.forEach(planet => {
-          if(lastItemOfValue%6 == planet.id) {
+          if(randomizedForPlanets == planet.id) {
             pictogrammList[value.length - 1].innerHTML = planet.svg
           }
         })
       }
 
       if(value.length%2 === 0) {
-        signs.forEach(signs => {
-          if(lastItemOfValue%6 == signs.id) {
-            pictogrammList[value.length - 1].innerHTML = signs.svg
+        signs.forEach(sign => {
+          if(randomizedForSigns == sign.id) {
+            pictogrammList[value.length - 1].innerHTML = sign.svg
           }
         })
       }
