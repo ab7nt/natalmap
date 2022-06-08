@@ -22,13 +22,19 @@ background-size: 450px;
 background-attachment: fixed;
 } */
 
+#birthInfoForm {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
 input {
   min-width: 160px;
 }
 
-body {
+/* body {
   background-color: transparent;
-}
+} */
 
 .container {
   max-width: 700px;
@@ -36,6 +42,10 @@ body {
 
 #pictogramms {
   height: 45px;
+}
+
+#imgTitle {
+  opacity: 70%;
 }
 
 #zodiacSignDescr {
@@ -136,6 +146,9 @@ body {
 
   .inputsWrapper {
     margin-bottom: 15px;
-    
+  }
+
+  #imgTitle {
+    display: none;
   }
 }
