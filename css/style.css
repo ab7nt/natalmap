@@ -14,12 +14,16 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-html {
+/* html {
 background-image: url(../img/tittle.png);
 background-repeat: no-repeat;
 background-position: 50% 230px;
 background-size: 450px;
 background-attachment: fixed;
+} */
+
+input {
+  min-width: 160px;
 }
 
 body {
@@ -28,6 +32,10 @@ body {
 
 .container {
   max-width: 700px;
+}
+
+#pictogramms {
+  height: 45px;
 }
 
 #zodiacSignDescr {
@@ -116,5 +124,18 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 685px) {
+  #birthInfoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputsWrapper {
+    margin-bottom: 15px;
+    
   }
 }
