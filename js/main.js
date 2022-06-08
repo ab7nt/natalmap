@@ -41,7 +41,7 @@
       <strong class="h4 m-0">  
         ${sign}
       </strong>
-      <span id="zodiacSignDescr" class="text-muted">
+      <span id="zodiacSignDescr" class="text-muted text-center">
         Обитель: ${pictogrammList[4].children[0].id} (${inputsValue[5]%2 == 0 ? 'первый стационарный' : 'ретроградный'}), 
         экзальтация: ${pictogrammList[4].children[0].id}
       </span>
