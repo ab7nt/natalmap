@@ -33,6 +33,7 @@
     }
 
     function createZodiacSignElement() {
+      getInputsValues();
       getGoroscopeSign();
       showElement('#zodiacSign');
       zodiacSign.style.display = 'inline';
@@ -42,7 +43,7 @@
       </strong>
       <span id="zodiacSignDescr" class="text-muted">
         Обитель: ${pictogrammList[4].children[0].id} (${inputsValue[5]%2 == 0 ? 'первый стационарный' : 'ретроградный'}), 
-        экзальтация: ${pictogrammList[4].children[0].id !== pictogrammList[6].children[0].id ? pictogrammList[6].children[0].id : pictogrammList[2].children[0].id}
+        экзальтация: ${pictogrammList[4].children[0].id}
       </span>
       `
     }
@@ -158,7 +159,8 @@
       })
       buttonSubmit.disabled = true;
 
-      document.querySelector('html').style.backgroundImage = 'none';
+      // document.querySelector('html').style.backgroundImage = 'none';
+      document.querySelector('#imgTitle').style.display = 'none';
 
       createZodiacSignElement();
 
