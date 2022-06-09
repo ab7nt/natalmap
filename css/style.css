@@ -14,13 +14,9 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-/* html {
-background-image: url(../img/tittle.png);
-background-repeat: no-repeat;
-background-position: 50% 230px;
-background-size: 450px;
-background-attachment: fixed;
-} */
+header {
+  margin-bottom: 24px;
+}
 
 #birthInfoForm {
   display: flex;
@@ -32,12 +28,14 @@ input {
   min-width: 160px;
 }
 
-/* body {
-  background-color: transparent;
-} */
-
 .container {
   max-width: 700px;
+}
+
+.section-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #pictogramms {
@@ -142,6 +140,14 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .section-inputs {
+    flex-flow: column-reverse;
   }
 
   .inputsWrapper {
