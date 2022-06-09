@@ -107,6 +107,8 @@
       getInputsValues();
       showPictogramm(inputsValue);
 
+      
+
       // inputsValue || NaN
       //   ? pictogramms.style.display = 'inline'
       //   : pictogramms.style.display = 'none'
@@ -134,6 +136,7 @@
       }
     });
 
+
     birthInfoForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
@@ -142,7 +145,10 @@
       });
       buttonSubmit.disabled = true;
 
-      document.querySelector('#zodiacSign').focus();
+      setTimeout(function() {
+        window.scrollBy({top: 400, behavior: 'smooth'})
+      }, 2)
+
       document.querySelector('#imgTitle').style.display = 'none';
 
       createZodiacSignElement();
