@@ -45,8 +45,8 @@
     }
 
     function showPictogramm(value) {
-      const randomizedForPlanets = Math.round(Math.random() * planets.length);
-      const randomizedForSigns = Math.round(Math.random() * signs.length);
+      const randomizedForPlanets = Math.floor(Math.random() * (planets.length));
+      const randomizedForSigns = Math.floor(Math.random() * (signs.length));
       
       if(!value) {
         return;
