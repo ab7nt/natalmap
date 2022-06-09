@@ -101,13 +101,15 @@
       spinner.style.display = 'none';
       showElement('#natalDescr');
       showElement('#howItWorkDecsr');
+
+      setTimeout(function() {
+        zodiacSign.scrollIntoView({behavior: 'smooth'})
+      }, 2)
     }
 
     birthInfoForm.addEventListener('input', () => {
       getInputsValues();
       showPictogramm(inputsValue);
-
-      
 
       // inputsValue || NaN
       //   ? pictogramms.style.display = 'inline'
