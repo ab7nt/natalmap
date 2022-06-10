@@ -39,7 +39,7 @@
       </strong>
       <span id="zodiacSignDescr" class="text-muted text-center">
         Обитель: ${pictogrammList[4].children[0].id} (${inputsValue[5]%2 == 0 ? 'первый стационарный' : 'ретроградный'}), 
-        экзальтация: ${pictogrammList[4].children[0].id}
+        экзальтация: ${pictogrammList[1].children[0].id}
       </span>
       `;
     }

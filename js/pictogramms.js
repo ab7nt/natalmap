@@ -1,6 +1,6 @@
 const planets = [
   {id: 0, name: 'jupiter', svg: 
-  `<svg id="jupiter" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Jupiter.svg"
+  `<svg id="Юпитер" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Jupiter.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -15,7 +15,7 @@ const planets = [
     </svg>`
   },
   {id: 1, name: 'mars', svg: 
-  `<svg id="mars" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Mars.svg"
+  `<svg id="Марс" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Mars.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -32,7 +32,7 @@ const planets = [
     </svg>`
   },
   {id: 2, name: 'mercury', svg: 
-  `<svg id="mercury" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Mercury.svg"
+  `<svg id="Меркурий" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Mercury.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -52,7 +52,7 @@ const planets = [
   </svg>`
   },
   {id: 3, name: 'moon', svg: 
-  `<svg id="moon" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Moon.svg"
+  `<svg id="Луна" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Moon.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -65,7 +65,7 @@ const planets = [
   </svg>`
   },
   {id: 4, name: 'saturn', svg: 
-  `<svg id="saturn" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Saturn.svg"
+  `<svg id="Сатурн" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Saturn.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -82,7 +82,7 @@ const planets = [
   </svg>`
   },
   {id: 5, name: 'sun', svg: 
-  `<svg id="sun" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1">
+  `<svg id="Солнце" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1">
     <g id="surface1">
       <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
         d="M 6.898438 6 C 6.898438 5.503906 6.496094 5.101562 6 5.101562 C 5.503906 5.101562 5.101562 5.503906 5.101562 6 C 5.101562 6.496094 5.503906 6.898438 6 6.898438 C 6.496094 6.898438 6.898438 6.496094 6.898438 6 " />
@@ -94,7 +94,7 @@ const planets = [
   </svg>`
   },
   {id: 6, name: 'venus', svg: 
-  `<svg id="venus" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1"
+  `<svg id="Венера" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1"
       sodipodi:docname="Venus (fixed width).svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -114,7 +114,7 @@ const planets = [
 
 const signs = [
   {id: 0, name: 'aquarius', svg: 
-  `<svg id="aquarius" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Aquarius.svg"
+  `<svg id="Водолей" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="Aquarius.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -134,7 +134,7 @@ const signs = [
   </svg>`
   },
   {id: 1, name: 'aries', svg: 
-  `<svg id="aries" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="ar.svg"
+  `<svg id="Овен" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="ar.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -158,7 +158,7 @@ const signs = [
   </svg>`
   },
   {id: 2, name: 'cancer', svg: 
-  `<svg id="cancer" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="can.svg"
+  `<svg id="Рак" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="can.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -190,7 +190,7 @@ const signs = [
   </svg>`
   },
   {id: 3, name: 'capricorn', svg: 
-  `<svg id="capricorn" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="cap.svg"
+  `<svg id="Козерог" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="cap.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -210,7 +210,7 @@ const signs = [
   </svg>`
   },
   {id: 4, name: 'gemini', svg: 
-  `<svg id="gemini" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="gem.svg"
+  `<svg id="Близнецы" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="gem.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -239,7 +239,7 @@ const signs = [
     </g>
   </svg>`
   },
-  {id: 5, name: 'leo', svg: 
+  {id: 5, name: 'Лев', svg: 
   `<svg id="leo" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="le.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
@@ -263,7 +263,7 @@ const signs = [
     </g>
   </svg>`
   },
-  {id: 6, name: 'libra', svg: 
+  {id: 6, name: 'Весы', svg: 
   `<svg id="libra" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="lib.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
@@ -287,7 +287,7 @@ const signs = [
   </svg>`
   },
   {id: 7, name: 'ophiuchus', svg: 
-  `<svg id="ophiuchus" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="oph.svg"
+  `<svg id="Змееносец" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="oph.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -311,7 +311,7 @@ const signs = [
   </svg>`
   },
   {id: 8, name: 'pisces', svg: 
-  `<svg id="pisces" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1"
+  `<svg id="Рыбы" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1"
       sodipodi:docname="Portia_symbol_(fixed_width).svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -340,7 +340,7 @@ const signs = [
   </svg>`
   },
   {id: 9, name: 'sagittarius', svg: 
-  `<svg id="sagittarius" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="sag.svg"
+  `<svg id="Стрелец" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="sag.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -364,7 +364,7 @@ const signs = [
     </g>
   </svg>`
   },
-  {id: 10, name: 'scorpio', svg: 
+  {id: 10, name: 'Скорпион', svg: 
   `<svg id="scorpio" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="sco.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
@@ -396,7 +396,7 @@ const signs = [
   </svg>`
   },
   {id: 11, name: 'taurus', svg: 
-    `<svg id="taurus" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="tau.svg"
+    `<svg id="Телец" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="tau.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
@@ -420,7 +420,7 @@ const signs = [
   </svg>`
   },
   {id: 12, name: 'virgo', svg: 
-  `<svg id="virgo" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="vir.svg"
+  `<svg id="Дева" width="19pt" height="19pt" viewBox="0 0 12 12" version="1.1" sodipodi:docname="vir.svg"
       inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
       gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
