@@ -14,6 +14,8 @@
     let inputsValue = '';
     let sign;
 
+    birthYearInput.setAttribute('max', currentYear)
+
     function getInputsValues() {
       inputsValue = '';
       inputsBirthInfoForm.forEach(el => {
@@ -152,17 +154,8 @@
       }
     });
 
-
     birthInfoForm.addEventListener('submit', (e) => {
       e.preventDefault();
-
-      if(Number(birthYearInput.value) < 1900 || Number(birthYearInput.value) > currentYear) {
-        alertIsInvalid.textContent += `год рождения должен быть от 1900 до ${currentYear}`
-        birthYearInput.focus();
-        return
-      } else {
-        alertIsInvalid.textContent = ''
-      }
 
       inputsBirthInfoForm.forEach(el => {
         el.disabled = true;
