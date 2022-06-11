@@ -38,6 +38,11 @@ input {
   align-items: center;
 }
 
+.alert-is-invalid {
+  font-size: 13px;
+  color: crimson;
+}
+
 #pictogramms {
   height: 45px;
 }

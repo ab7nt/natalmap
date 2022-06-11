@@ -5,16 +5,14 @@
     const birthMonthInput = document.querySelector('#birthMonthInput');
     const birthDayInput = document.querySelector('#birthDayInput');
     const inputsBirthInfoForm = document.querySelectorAll('input');
+    const alertIsInvalid = document.querySelector('.alert-is-invalid');
     const buttonSubmit = document.querySelector('#buttonSubmit');
     const pictogrammList = document.querySelectorAll('li');
-    // const pictogramms = document.querySelector('#pictogramms');
     const zodiacSign = document.querySelector('#zodiacSign');
     const spinner = document.querySelector('#spinner');
     const currentYear = new Date().getFullYear();
     let inputsValue = '';
     let sign;
-
-    birthYearInput.setAttribute('max', currentYear);
 
     function getInputsValues() {
       inputsValue = '';
@@ -28,7 +26,6 @@
       if(input == birthYearInput) {
         maxChars = 4;
       }
-
       if(input.value.length >= maxChars) {
         input.value = input.value.substr(0, maxChars)
       }
@@ -113,19 +110,22 @@
       showElement('#howItWorkDecsr');
 
       setTimeout(function() {
-        zodiacSign.scrollIntoView({behavior: 'smooth'})
+        document.querySelector('#forScroll').scrollIntoView({behavior: 'smooth'})
       }, 2)
     }
 
     birthInfoForm.addEventListener('input', (e) => {
       getInputsValues();
       showPictogramm(inputsValue);
+      blockEnteringIfexceedingMaxAllowed(e.target);
 
-      // inputsValue || NaN
-      //   ? pictogramms.style.display = 'inline'
-      //   : pictogramms.style.display = 'none'
+      if(birthMonthInput.value > 12) {
+        birthMonthInput.value = 12;
+      }
 
-      blockEnteringIfexceedingMaxAllowed(e.target)
+      if(birthDayInput.value > 31) {
+        birthDayInput.value = 31
+      }
 
       if(birthYearInput.value.length >= 4) {
         birthMonthInput.disabled = false;
@@ -155,6 +155,14 @@
 
     birthInfoForm.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      if(Number(birthYearInput.value) < 1900 || Number(birthYearInput.value) > currentYear) {
+        alertIsInvalid.textContent += `год рождения должен быть от 1900 до ${currentYear}`
+        birthYearInput.focus();
+        return
+      } else {
+        alertIsInvalid.textContent = ''
+      }
 
       inputsBirthInfoForm.forEach(el => {
         el.disabled = true;
