@@ -24,6 +24,16 @@
       });
     }
 
+    function blockEnteringIfexceedingMaxAllowed(input, maxChars = 2) {
+      if(input == birthYearInput) {
+        maxChars = 4;
+      }
+
+      if(input.value.length >= maxChars) {
+        input.value = input.value.substr(0, maxChars)
+      }
+    }
+
     function showElement(elementId) {
       document.querySelector(elementId).style.display = 'inline';
     }
@@ -52,7 +62,7 @@
         return;
       }
 
-      if(value.length%2 === 1) {
+      if(value.length%2 === 1 && value.length <= planets.length) {
         planets.forEach(planet => {
           if(randomizedForPlanets == planet.id) {
             pictogrammList[value.length - 1].innerHTML = planet.svg;
@@ -60,7 +70,7 @@
         });
       }
 
-      if(value.length%2 === 0) {
+      if(value.length%2 === 0 && value.length <= signs.length) {
         signs.forEach(sign => {
           if(randomizedForSigns == sign.id) {
             pictogrammList[value.length - 1].innerHTML = sign.svg;
@@ -107,7 +117,7 @@
       }, 2)
     }
 
-    birthInfoForm.addEventListener('input', () => {
+    birthInfoForm.addEventListener('input', (e) => {
       getInputsValues();
       showPictogramm(inputsValue);
 
@@ -115,9 +125,12 @@
       //   ? pictogramms.style.display = 'inline'
       //   : pictogramms.style.display = 'none'
 
+      blockEnteringIfexceedingMaxAllowed(e.target)
+
       if(birthYearInput.value.length >= 4) {
         birthMonthInput.disabled = false;
         birthMonthInput.focus();
+        e.preventDefault();
       } else {
         birthMonthInput.disabled = true;
         birthYearInput.focus();
@@ -133,6 +146,7 @@
       if(inputsValue.length >= 8) {
         buttonSubmit.disabled = false;
         buttonSubmit.focus();
+        e.preventDefault();
       } else {
         buttonSubmit.disabled = true;
       }

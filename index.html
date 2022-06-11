@@ -30,17 +30,17 @@
         <form id="birthInfoForm">
           <div class="inputsWrapper mr-3">
             <label for="birthYearInput" class="form-label">Год рождения</label>
-            <input type="number" class="form-control" id="birthYearInput" maxlength="4" autocomplete="off" autofocus
+            <input type="number" class="form-control" id="birthYearInput" min="1900" autocomplete="off" autofocus
               placeholder="Например: 1995">
           </div>
           <div class="inputsWrapper mr-3">
             <label for="birthMonthInput" class="form-label">Месяц рождения</label>
-            <input type="number" class="form-control" id="birthMonthInput" maxlength="2" max="12" autocomplete="off"
+            <input type="number" class="form-control" id="birthMonthInput" max="12" autocomplete="off"
               placeholder="Например: 04" disabled>
           </div>
           <div class="inputsWrapper mr-3">
             <label for="birthDayInput" class="form-label" disabled>День рождения</label>
-            <input type="number" class="form-control" id="birthDayInput" maxlength="2" max="31" autocomplete="off"
+            <input type="number" class="form-control" id="birthDayInput" max="31" autocomplete="off"
               placeholder="Например: 12" disabled>
           </div>
           <div class="d-grid gap-2">
