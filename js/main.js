@@ -1,5 +1,5 @@
 (() => {
-  document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('DOMContentLoaded', () => {
     const birthInfoForm = document.querySelector('#birthInfoForm');
     const birthYearInput = document.querySelector('#birthYearInput');
     const birthMonthInput = document.querySelector('#birthMonthInput');
