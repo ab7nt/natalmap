@@ -13,6 +13,9 @@
     const currentYear = new Date().getFullYear();
     let inputsValue = '';
     let sign;
+    let convent;
+    let exaltation;
+    let reserveExaltation;
 
     birthYearInput.setAttribute('max', currentYear)
 
@@ -38,6 +41,10 @@
     }
 
     function createZodiacSignElement() {
+      convent = pictogrammList[4].children[0].id;
+      exaltation = pictogrammList[1].children[0].id;
+      reserveExaltation = pictogrammList[3].children[0].id
+
       getInputsValues();
       getGoroscopeSign();
       showElement('#zodiacSign');
@@ -47,8 +54,8 @@
         ${sign}
       </strong>
       <span id="zodiacSignDescr" class="text-muted text-center">
-        Обитель: ${pictogrammList[4].children[0].id} (${inputsValue[5]%2 == 0 ? 'первый стационарный' : 'ретроградный'}), 
-        экзальтация: ${pictogrammList[1].children[0].id}
+        Обитель: ${convent} (${inputsValue[5]%2 == 0 ? 'стационарный' : 'ретроградный'}), 
+        экзальтация: ${exaltation}
       </span>
       `;
     }
@@ -154,6 +161,22 @@
       }
     });
 
+    // document.querySelector('.section-inputs').addEventListener('click', () => {
+    //   if(birthMonthInput.value.length == 1 && birthMonthInput.value != '0') {
+    //     const arrFromInputValue = birthMonthInput.value.split('')
+
+    //     arrFromInputValue.unshift('0');
+    //     birthMonthInput.value = arrFromInputValue.join('');
+
+    //     birthDayInput.disabled = false;
+    //     birthDayInput.focus();
+    //   }
+
+    //   if(birthDayInput.value.length == 1 && birthDayInput.value != '0') {
+    //     buttonSubmit.disabled = false;
+    //   }
+    // })
+
     birthInfoForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
@@ -169,6 +192,9 @@
       document.querySelector('#imgTitle').style.display = 'none';
 
       createZodiacSignElement();
+
+      document.querySelector('#planetAddition').innerText = `Несмотря на то, что Ваш знак ${sign}, на Вас оказывает ${inputsValue[5]%2 == 0 ? 'мощное' : 'слабое'} влияние ${exaltation != sign ? exaltation : reserveExaltation}, и поэтому `
+      document.querySelector('#signAddition').innerText = `Обитель в знаке ${convent} объясняет, почему `
 
       spinner.style.display = 'inline';
       setTimeout(renderElementsAfterSubmit, 1700);
