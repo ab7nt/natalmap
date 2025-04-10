@@ -48,7 +48,8 @@ input {
 }
 
 #imgTitle {
-  
+  width: 665px;
+  opacity: 90%;
 }
 
 #zodiacSignDescr {
