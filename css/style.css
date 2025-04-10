@@ -48,19 +48,15 @@ input {
 }
 
 #imgTitle {
-   -webkit-mask-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgba(0, 0, 0, 1) 10%,
-      rgba(0, 0, 0, 1) 90%,
-      transparent 100%
+-webkit-mask-image: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 1) 30%,  /* Непрозрачная центральная часть */
+      rgba(0, 0, 0, 0) 70%    /* Плавное угасание к краям */
   );
-  mask-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgba(0, 0, 0, 1) 10%,
-      rgba(0, 0, 0, 1) 90%,
-      transparent 100%
+  mask-image: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 0) 70%
   );
   opacity: 100%;
 }
